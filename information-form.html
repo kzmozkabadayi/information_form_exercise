@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Information Form Exercise</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    <link href="http://cdn.jsdelivr.net/webjars/bootstrap/3.3.4/css/bootstrap.min.css"
+          th:href="@{/webjars/bootstrap/3.3.5/css/bootstrap.min.css}"
+          rel="stylesheet" media="screen"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
+
+    <script src="http://cdn.jsdelivr.net/webjars/jquery/2.1.4/jquery.min.js"
+            th:src="@{/webjars/jquery/2.1.4/jquery.min.js}"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" ></script>
+
+    <link href="../../static/css/spring-core.css"
+          th:href="@{css/spring-core.css}" rel="stylesheet" media="screen"/>
+    <link href="information-form.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"/>
+</head>
+<body>
+    <nav class="navbar navbar-default">
+		<div class="container">
+			<div class="navbar-header">
+
+				<a href="#" class="navbar-brand">Information Form</a>
+			</div>
+			
+			<ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <span class="glyphicon glyphicon-menu-hamburger"></span>
+                    </a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Settings</a></li>
+                    <li><a href="#">Sign Out</a></li>
+                </ul>
+            </li>
+            </ul>
+		</div>
+	</nav><!-- end of the navbar-->
+
+    <div class="container">
+        <div class="container-section d-flex align-items-center justify-content-center col-4">
+            <div class="container-section-title-part">
+                <p>Complete Profile</p>
+            </div>
+            <div class="container-second-section">
+                <div class="container-second-part">
+                    <div class="second-part-title-section">
+                        <p>STEP 1</p>
+                    </div>
+                    <div class="second-part-description-part">
+                        <p>If anything wrong please edit. Otherwise continue.</p>
+                    </div>
+                    <div class="form-part">
+
+                        <div class="row text-area-first-section">
+                            <div class="col-6 col-md-6 col-lg-6 text-area-part">
+                                <input class="text-area" type="text" placeholder="Name">
+                            </div>
+                            <div class="col-6 col-md-6 col-lg-6 text-area-part">
+                                <input class="text-area" type="text" placeholder="Surname">
+                            </div>
+                            
+                        </div>
+                        <div class="row text-area-second-section">
+                            <div class="col-6 col-md-6 col-lg-6 text-area-part">
+                                <input class="text-area" type="text" placeholder="E-mail">
+                            </div>
+                            <div class="col-6 col-md-6 col-lg-6 text-area-part">
+                                <input class="text-area" type="text" placeholder="Other E-mail">
+                            </div>
+                            
+                        </div>
+
+                        <div class="row text-area-third-section">
+                            <div class="col-6 col-md-6 col-lg-6 text-area-part">
+                                <input class="text-area" type="date">
+                            </div>
+                            <div class="col-6 col-md-6 col-lg-6 text-area-part">
+                                <input class="text-area" type="text" placeholder="Gender">
+                            </div>
+                            
+                        </div>
+
+                        <div class="address-part">
+                            <div class="title-part">
+                                <p>Address</p>
+                            </div>
+                            <div class="row text-area-fourth-section">
+                                <div class="col-4 col-md-4 col-lg-4 text-area-part">
+                                    <input class="text-area" type="text" placeholder="Country">
+                                </div>
+                                <div class="col-4 col-md-4 col-lg-4 text-area-part">
+                                    <input class="text-area" type="text" placeholder="City">
+                                </div>
+                                <div class="col-4 col-md-4 col-lg-4 text-area-part">
+                                    <input class="text-area" type="text" placeholder="Town">
+                                </div>
+                                
+                            </div>
+
+                            <div class="text-area-last-section">
+                                <textarea class="text-area" rows="5" placeholder="About.."></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row button-part-section">
+                        <div class="col-3 col-md-3 col-lg-3 cancel-button">
+                            <a href="#">
+                                <button type="submit" class="btn btn-default cancel" style="outline: 0 !important;" >Cancel</button>
+                            </a>
+                        </div>
+                        <div class="col-9 col-md-9 col-lg-9 next-button">
+                            <a href="#">
+                                <button type="submit" class="btn btn-default next">Next</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+</body>
+
+</html>
